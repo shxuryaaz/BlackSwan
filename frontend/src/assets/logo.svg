@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black Swan Body -->
+  <path d="M120 140 Q80 120 60 100 Q50 80 70 60 Q90 50 120 60 Q150 70 180 80 Q200 90 220 100 Q240 110 250 120 Q260 130 250 140 Q240 150 220 150 Q200 150 180 145 Q150 140 120 140 Z" fill="black"/>
+  
+  <!-- Swan Neck -->
+  <path d="M250 120 Q280 100 300 80 Q320 60 340 70 Q350 80 340 100 Q330 120 320 130 Q310 135 300 130 Q290 125 280 120 Q270 118 250 120 Z" fill="black"/>
+  
+  <!-- Swan Head -->
+  <circle cx="340" cy="85" r="25" fill="black"/>
+  
+  <!-- Red Beak -->
+  <path d="M355 85 L375 82 L370 88 Z" fill="#E50000"/>
+  
+  <!-- White Eye -->
+  <circle cx="345" cy="80" r="4" fill="white"/>
+  
+  <!-- Wing Details -->
+  <path d="M140 100 Q160 95 180 100 Q200 105 220 110 Q240 115 220 125 Q200 130 180 125 Q160 120 140 115 Z" fill="black" opacity="0.8"/>
+  <path d="M150 110 Q170 108 190 110 Q210 112 190 118 Q170 120 150 118 Z" fill="black" opacity="0.6"/>
+</svg>

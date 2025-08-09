@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* BlackSwan Color Scheme: Premium Black Swan with Red Accents */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --primary: 220 13% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 14% 96%;
+    --ring: 0 84% 60%;
+
+    /* BlackSwan Custom Design Tokens */
+    --blackswan-red: 0 84% 60%;
+    --blackswan-black: 220 13% 18%;
+    --blackswan-white: 0 0% 100%;
+    --blackswan-gray-light: 220 14% 96%;
+    --blackswan-gray-medium: 220 13% 91%;
+    --blackswan-gray-dark: 220 9% 46%;
+    
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 13% 18%), hsl(0 84% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 14% 96%), hsl(0 84% 60% / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14% 96%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 18%) 0%, hsl(0 84% 60%) 100%);
+    
+    /* Premium Shadows */
+    --shadow-elegant: 0 20px 40px -12px hsl(220 13% 18% / 0.08);
+    --shadow-card: 0 4px 20px -4px hsl(220 13% 18% / 0.06);
+    --shadow-button: 0 4px 12px -2px hsl(0 84% 60% / 0.3);
+    --shadow-red-glow: 0 0 40px hsl(0 84% 60% / 0.15);
+    --shadow-float: 0 25px 50px -12px hsl(220 13% 18% / 0.12);
+    
+    /* Premium Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 14% 96%;
+    --sidebar-foreground: 220 13% 18%;
+    --sidebar-primary: 220 13% 18%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 220 13% 18%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 220 13% 18%;
+    --foreground: 220 14% 96%;
+
+    --card: 220 13% 22%;
+    --card-foreground: 220 14% 96%;
+
+    --popover: 220 13% 22%;
+    --popover-foreground: 220 14% 96%;
+
+    --primary: 220 14% 96%;
+    --primary-foreground: 220 13% 18%;
+
+    --secondary: 220 13% 26%;
+    --secondary-foreground: 220 14% 96%;
+
+    --muted: 220 13% 26%;
+    --muted-foreground: 220 9% 66%;
+
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 26%;
+    --input: 220 13% 26%;
+    --ring: 0 84% 60%;
+    
+    --sidebar-background: 220 13% 22%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 0 84% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 13% 26%;
+    --sidebar-accent-foreground: 220 14% 96%;
+    --sidebar-border: 220 13% 26%;
+    --sidebar-ring: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Premium Card Styles */
+  .card-premium {
+    @apply bg-gradient-to-br from-card to-card/80 backdrop-blur-sm border border-border/50 shadow-card hover:shadow-elegant transition-all duration-300;
+  }
+  
+  .card-glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-card;
+  }
+  
+  /* Premium Button Styles */
+  .btn-premium {
+    @apply bg-gradient-to-r from-primary to-primary/90 text-primary-foreground font-semibold px-6 py-3 rounded-xl shadow-button hover:shadow-red-glow hover:scale-105 transition-all duration-300;
+  }
+  
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent to-accent/90 text-accent-foreground font-semibold px-6 py-3 rounded-xl shadow-button hover:shadow-red-glow hover:scale-105 transition-all duration-300;
+  }
+  
+  /* Premium Input Styles */
+  .input-premium {
+    @apply bg-white/80 backdrop-blur-sm border border-border/50 rounded-xl px-4 py-3 focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all duration-300;
+  }
+  
+  /* Premium Navigation */
+  .nav-premium {
+    @apply bg-white/80 backdrop-blur-md border-b border-border/50 shadow-sm;
+  }
+  
+  /* Premium Hero Section */
+  .hero-premium {
+    @apply bg-gradient-to-br from-background via-background to-accent/5;
+  }
+  
+  /* Premium Stats Cards */
+  .stats-card {
+    @apply bg-gradient-to-br from-white to-white/90 backdrop-blur-sm border border-border/30 rounded-2xl shadow-card hover:shadow-elegant hover:scale-105 transition-all duration-300 overflow-hidden;
+  }
+  
+  /* Premium Table Styles */
+  .table-premium {
+    @apply bg-white/80 backdrop-blur-sm border border-border/30 rounded-2xl overflow-hidden shadow-card;
+  }
+  
+  .table-premium th {
+    @apply bg-gradient-to-r from-muted/50 to-muted/30 backdrop-blur-sm font-semibold text-foreground/80;
+  }
+  
+  .table-premium tr {
+    @apply hover:bg-muted/30 transition-colors duration-200;
+  }
+  
+  /* Premium Badge Styles */
+  .badge-premium {
+    @apply bg-gradient-to-r from-accent/10 to-accent/5 text-accent font-semibold px-3 py-1 rounded-full border border-accent/20;
+  }
+  
+  /* Premium Loading States */
+  .loading-premium {
+    @apply bg-gradient-to-r from-muted/50 to-muted/30 animate-pulse rounded-xl;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220 14% 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(220 9% 46%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 13% 18%);
+}

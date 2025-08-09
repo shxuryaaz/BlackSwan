@@ -1,0 +1,33 @@
+{
+  "name": "blackswan",
+  "version": "1.0.0",
+  "description": "Smart Payment Reminder Agent - AI-powered payment collection automation",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:frontend",
+    "start": "cd frontend && npm run preview",
+    "lint": "cd frontend && npm run lint"
+  },
+  "keywords": [
+    "payment-reminders",
+    "ai",
+    "fintech",
+    "automation",
+    "react",
+    "supabase",
+    "typescript"
+  ],
+      "author": "BlackSwan Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/blackswan.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+} 

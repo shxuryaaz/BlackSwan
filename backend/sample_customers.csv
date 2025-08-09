@@ -1,0 +1,6 @@
+name,email,phone,company,amount_due,due_date,notes
+Acme Corp Ltd,billing@acmecorp.com,+1-555-0123,Acme Corporation,15000.00,2024-01-15,High priority customer - Overdue by 30+ days
+Tech Solutions Inc,accounts@techsolutions.com,+1-555-0124,Tech Solutions,8500.50,2024-01-20,Regular customer - Overdue by 25+ days
+Global Enterprises,finance@globalent.com,+1-555-0125,Global Enterprises,22000.00,2024-01-10,Overdue payment - High risk customer
+StartupCo,hello@startupco.com,,StartupCo Inc,3200.75,2024-02-25,New customer - Due in future
+Enterprise Solutions,billing@enterprise.com,+1-555-0126,Enterprise Solutions,12800.00,2024-01-12,Long-term client - Overdue by 28+ days 
