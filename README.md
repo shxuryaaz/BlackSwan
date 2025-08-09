@@ -1,12 +1,12 @@
 # BlackSwan - Smart Payment Reminder Agent
 
-A comprehensive payment collection automation platform built with React, TypeScript, and Supabase. BlackSwan helps finance teams automate payment reminders through AI-powered multi-channel communication.
+A comprehensive payment collection automation platform built with React, TypeScript, and Firebase. BlackSwan helps finance teams automate payment reminders through AI-powered multi-channel communication.
 
 ## Project Structure
 
 ```
 clever-pay-buddy/
-├── backend/          # Node.js backend with Supabase integration
+├── backend/          # Node.js backend with Firebase integration
 ├── frontend/         # React TypeScript frontend
 └── README.md         # Project documentation
 ```
@@ -27,4 +27,4 @@ clever-pay-buddy/
 
 ---
 
-*Built with ❤️ by shxuryaaz*
+*Built by shaurya*
